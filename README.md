@@ -201,6 +201,4 @@ curl http://localhost:9900/milvus/health
 | `make upload` | 上传 `aiops-docs` |
 | `make status` | 查看容器状态 |
 
-## 许可证
 
-Apache License 2.0（见仓库根目录 `LICENSE`）。
