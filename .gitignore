@@ -1,2 +1,100 @@
-# 项目排除路径
-/target/
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### IntelliJ IDEA ###
+.idea/modules.xml
+.idea/jarRepositories.xml
+.idea/compiler.xml
+.idea/libraries/
+.idea/CopilotChatHistory.xml
+.idea/CopilotChatTabs.xml
+*.iws
+*.iml
+*.ipr
+.idea/*
+### Eclipse ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
+
+### Mac OS ###
+.DS_Store
+
+### Application Logs ###
+*.log
+app.log
+logs/
+server.log
+server.pid
+
+### Upload Files ###
+uploads/
+
+### Temp Scripts ###
+*.sh
+*.py
+
+### docker
+/volumes
+/server.pid
+
+### Secrets / 密钥与本地私密配置（禁止提交到 GitHub）###
+# 真实密钥文件：从 .env.example / .env-副本 复制后填写，切勿提交
+.env
+.env.*
+!.env.example
+!.env.*.example
+!.env-副本
+!.env-副本.*
+
+# Spring Boot 本地覆盖配置（可含真实密钥）
+**/application-local.yml
+**/application-local.yaml
+**/application-local.properties
+**/application-secret.yml
+**/application-secret.yaml
+**/application-secret.properties
+
+# 证书 / 私钥 / 密钥库
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+*.truststore
+id_rsa
+id_rsa.*
+id_ed25519
+id_ed25519.*
+*.secret
+*credentials*
+!*credentials*.example
+!*credentials*-副本*
+
+# 云厂商 / 本地凭证目录
+.aws/
+.azure/
+.gcloud/
+.kube/config
+secrets/
+private/
